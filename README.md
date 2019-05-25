@@ -10,3 +10,4 @@ The completed extension can be downloaded [here](https://developer.chrome.com/ex
 [iconfinder](https://www.iconfinder.com)  
 
 GoogleChrome/[chrome-app-samples](https://github.com/GoogleChrome/chrome-app-samples)  
+[hello-world-sync](https://github.com/GoogleChrome/chrome-app-samples/tree/master/samples/hello-world-sync)  
