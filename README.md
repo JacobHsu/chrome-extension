@@ -11,3 +11,8 @@ The completed extension can be downloaded [here](https://developer.chrome.com/ex
 
 GoogleChrome/[chrome-app-samples](https://github.com/GoogleChrome/chrome-app-samples)  
 [hello-world-sync](https://github.com/GoogleChrome/chrome-app-samples/tree/master/samples/hello-world-sync)  
+
+
+# mainfest.json 
+browser_action 瀏覽器按鈕 在瀏覽器開敵時便是啟用狀態  
+page_action 頁面按鈕  必需在指定的條件符合的狀況才會啟用  
