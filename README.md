@@ -74,4 +74,5 @@ Chrome插件，提交到谷歌插件市場的話需要打包為zip文件才行�
 
 # References
 
-[Vue - 打造 Chrome Extension](https://dotblogs.com.tw/brian90191/2019/06/20/154311)  
+[Vue - 打造 Chrome Extension](https://dotblogs.com.tw/brian90191/2019/06/20/154311)
+[Building a Chrome Extension Using React](https://medium.com/@gilfink/building-a-chrome-extension-using-react-c5bfe45aaf36)  
