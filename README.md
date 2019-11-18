@@ -72,6 +72,12 @@ parserOptions: {
 [![NPM](https://nodei.co/npm/zip-webpack-plugin.png?downloads=true&stars=true)](https://nodei.co/npm/zip-webpack-plugin/)  
 Chrome插件，提交到谷歌插件市場的話需要打包為zip文件才行。重複流程當然是交給程序。
 
+# React 
+
+[Create React App](https://zh-hant.reactjs.org/docs/create-a-new-react-app.html)
+`npx create-react-app react-ext`  
+[Building a Chrome Extension Using React](https://medium.com/@gilfink/building-a-chrome-extension-using-react-c5bfe45aaf36)  
+
 # References
 
 [Vue - 打造 Chrome Extension](https://dotblogs.com.tw/brian90191/2019/06/20/154311)
