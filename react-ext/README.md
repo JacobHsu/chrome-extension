@@ -50,9 +50,16 @@ Chrome插件的API
 
 [Declare Permissions](https://developer.chrome.com/extensions/declare_permissions)  
 
-# mainfest.json 
+## mainfest.json 
+
 browser_action 瀏覽器按鈕 在瀏覽器開敵時便是啟用狀態  
 page_action 頁面按鈕  必需在指定的條件符合的狀況才會啟用  
+
+Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'self' blob: filesystem:". Either the 'unsafe-inline' keyword, a hash ('sha256-P/KdvuJkHQwRCjP3/zvhW4AjD2Jo5r7K5Ra5LETfSAk='), or a nonce ('nonce-...') is required to enable inline execution.
+
+```js
+  "content_security_policy": "script-src 'self' 'sha256-P/KdvuJkHQwRCjP3/zvhW4AjD2Jo5r7K5Ra5LETfSAk='; object-src 'self'"
+```
 
 # ESLint
 
