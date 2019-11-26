@@ -1,68 +1,87 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# chrome-extension
 
-## Available Scripts
+[Getting Started Tutorial](https://developer.chrome.com/extensions/getstarted)
+The completed extension can be downloaded [here](https://developer.chrome.com/extensions/examples/tutorials/get_started_complete.zip)
 
-In the project directory, you can run:
 
-### `yarn start`
+[Chrome Extension 開發與實作](https://ithelp.ithome.com.tw/users/20079450/ironman/1149) 系列
+[快速打造一個chrome extension](https://ithelp.ithome.com.tw/articles/10186039)  
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[iconfinder](https://www.iconfinder.com)  
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+GoogleChrome/[chrome-app-samples](https://github.com/GoogleChrome/chrome-app-samples)  
+[hello-world-sync](https://github.com/GoogleChrome/chrome-app-samples/tree/master/samples/hello-world-sync)  
 
-### `yarn test`
+## vue-cli-plugin-chrome-ext
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`vue.config.js` 變更了原始專案的執行位置  
 
-### `yarn build`
+[vue-cli-plugin-chrome-ext](https://github.com/superoo7/vue-cli-plugin-chrome-ext)  
+vue-cli [插件](https://cli.vuejs.org/zh/guide/plugins-and-presets.html#插件)  
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+$ vue create vue-ext  
+$ cd vue-ext  
+$ vue add chrome-ext
+$ yarn serve  
+$ npm run build-watch `dist`  
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+`chrome://extensions/` 載入未封裝的項目  \vue-ext>`dist`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[vue-cli3开发Chrome插件实践](https://juejin.im/post/5ceca3d96fb9a07eea3252f9)  
 
-### `yarn eject`
+创建一个vue-cli3项目： `vue create {vue-extension}`，对话流程选择默认就行。
+进入项目`cd {vue-extension}`
+安装`vue-cli-plugin-chrome-ext`插件：`vue add chrome-ext`,根据安装对话选项设置好。
+删除vue-cli3无用文件跟文件夹：`src/main.js`、`src/components`
+`npm run build-watch` 运行开发环境，对修改文件进行实时编译并自动在根目录下生成`dist`文件夹，然后在浏览器上加载dist文件夹完成插件安装。
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> URIError: Failed to decode param '/%3C%=%20BASE_URL%20%%3Efavicon.ico'  
+public index.html  `<link rel="icon" href="<%= BASE_URL %>favicon.ico">`  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Chrome插件的API 
+[chrome.extension](https://developer.chrome.com/extensions/extension) [getURL](https://developer.chrome.com/extensions/extension#method-getURL)  
+[Chrome Extension Hot Reloader](https://github.com/xpl/crx-hotreload)  
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### debug
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[core-js module error](https://github.com/vuejs/vue-cli/issues/3678)  
 
-## Learn More
+# docs
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Declare Permissions](https://developer.chrome.com/extensions/declare_permissions)  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# mainfest.json 
+browser_action 瀏覽器按鈕 在瀏覽器開敵時便是啟用狀態  
+page_action 頁面按鈕  必需在指定的條件符合的狀況才會啟用  
 
-### Code Splitting
+# ESLint
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+error: Parsing error: Unexpected token < at src\popup\App\App.vue:1:1:
 
-### Analyzing the Bundle Size
+```js
+parserOptions: {
+    parser: 'babel-eslint'
+},
+```
+# npm
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+[![NPM](https://nodei.co/npm/webpack-bundle-analyzer.png?downloads=true&stars=true)](https://nodei.co/npm/webpack-bundle-analyzer/)  
 
-### Making a Progressive Web App
+`npm run build --report`  
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+[![NPM](https://nodei.co/npm/zip-webpack-plugin.png?downloads=true&stars=true)](https://nodei.co/npm/zip-webpack-plugin/)  
+Chrome插件，提交到谷歌插件市場的話需要打包為zip文件才行。重複流程當然是交給程序。
 
-### Advanced Configuration
+# React 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+[Create React App](https://zh-hant.reactjs.org/docs/create-a-new-react-app.html)
+`npx create-react-app react-ext`  
+[Building a Chrome Extension Using React](https://medium.com/@gilfink/building-a-chrome-extension-using-react-c5bfe45aaf36)  
 
-### Deployment
+[使用React快速开发Chrome扩展程序](https://segmentfault.com/a/1190000014662427)  
+[react-chrome-extension](https://github.com/satendra02/react-chrome-extension) 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+# References
 
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Vue - 打造 Chrome Extension](https://dotblogs.com.tw/brian90191/2019/06/20/154311)
+[Building a Chrome Extension Using React](https://medium.com/@gilfink/building-a-chrome-extension-using-react-c5bfe45aaf36)  

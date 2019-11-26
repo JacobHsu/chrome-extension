@@ -1,5 +1,11 @@
 # chrome-extension
 
+## Good
+
+[Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc) 讓瀏覽 github 代碼變得像本地編輯器一樣輕鬆,
+
+## dev
+
 [Getting Started Tutorial](https://developer.chrome.com/extensions/getstarted)
 The completed extension can be downloaded [here](https://developer.chrome.com/extensions/examples/tutorials/get_started_complete.zip)
 
@@ -78,7 +84,10 @@ Chrome插件，提交到谷歌插件市場的話需要打包為zip文件才行�
 `npx create-react-app react-ext`  
 [Building a Chrome Extension Using React](https://medium.com/@gilfink/building-a-chrome-extension-using-react-c5bfe45aaf36)  
 
-# References
+[使用React快速开发Chrome扩展程序](https://segmentfault.com/a/1190000014662427)  
+
+## References
 
 [Vue - 打造 Chrome Extension](https://dotblogs.com.tw/brian90191/2019/06/20/154311)
 [Building a Chrome Extension Using React](https://medium.com/@gilfink/building-a-chrome-extension-using-react-c5bfe45aaf36)  
+[前端效能提升之不可忽略的 Chrome 插件](https://juejin.im/post/5ddca3cbe51d4523601740ae?utm_source=gold_browser_extension)
