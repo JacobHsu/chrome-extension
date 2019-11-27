@@ -2,7 +2,16 @@
 
 ## Good
 
-[Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc) 讓瀏覽 github 代碼變得像本地編輯器一樣輕鬆,
+### 開發人員工具
+
+[Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc) 讓瀏覽 github 代碼變得像本地編輯器一樣輕鬆  
+[Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg?hl=zh-TW)  Identify web technologies  
+[掘金](https://chrome.google.com/webstore/detail/掘金/lecdifefmmfjnjjinhaennhdlmcaeeeb?hl=zh-CN)
+
+### 實用工具
+
+[Imageye - Image downloader](https://chrome.google.com/webstore/detail/imageye-image-downloader/agionbommeaifngbhincahgmoflcikhm)  
+[捕捉網頁截圖 - FireShot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg?hl=zh-TW)  
 
 ## dev
 
@@ -91,3 +100,8 @@ Chrome插件，提交到谷歌插件市場的話需要打包為zip文件才行�
 [Vue - 打造 Chrome Extension](https://dotblogs.com.tw/brian90191/2019/06/20/154311)
 [Building a Chrome Extension Using React](https://medium.com/@gilfink/building-a-chrome-extension-using-react-c5bfe45aaf36)  
 [前端效能提升之不可忽略的 Chrome 插件](https://juejin.im/post/5ddca3cbe51d4523601740ae?utm_source=gold_browser_extension)
+[Chrome Extension 開發與實作 系列](https://ithelp.ithome.com.tw/users/20079450/ironman/1149)
+
+## notes
+
+你的按鈕如果不是在任何頁面都有作用，請使用`頁面按鈕`，否則請使用`瀏覽器按鈕`。
